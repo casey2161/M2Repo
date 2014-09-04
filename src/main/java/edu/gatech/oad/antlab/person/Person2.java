@@ -30,8 +30,15 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
+            int i, j;
+            String shuffledString = " ";
+            Random rand = new Random();
+            while (input.length() != 0) {
+                    j = rand.nextInt(input.length());
+                    shuffledString = shuffledString + input.charAt(j);
+                    input = input.substring(0, j) + input.substring(j+1);
+            }
+            return shuffledString;
 	}
 	/**
 	 * Return a string rep of this object
