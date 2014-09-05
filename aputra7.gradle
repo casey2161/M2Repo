@@ -4,6 +4,12 @@ sourceSets {
     main.java.srcDir "src/main/java"
 }
 
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+    compile files('lib/resources.jar')
+}
+
 jar {
     manifest.attributes "Main-Class": "edu.gatech.oad.antlab.pkg1.AntLabMain"
+    manifest.attributes 'Class-Path' : 'lib/resources.jar'
 }
