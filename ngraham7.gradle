@@ -8,6 +8,6 @@ dependencies {
 }
 jar {
     manifest {
-        attributes 'Class-Path': 'lib\resources.jar', 'Main-Class': 'src.edu.gatech.oad.antlab.pkg1.AntLabMain.class'
+        attributes 'Class-Path': 'lib/resources.jar', 'Main-Class': 'src.edu.gatech.oad.antlab.pkg1.AntLabMain.class'
     }
 }
