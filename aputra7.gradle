@@ -1,4 +1,5 @@
 apply plugin: "java"
+defaultTasks 'jar'
 
 sourceSets {
     main.java.srcDir "src/main/java"
